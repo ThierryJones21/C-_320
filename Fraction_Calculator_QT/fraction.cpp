@@ -1,6 +1,3 @@
-/*
- * Part of the sample solution to assignment 2 for CISC/CMPE320.
- */
 #include <iostream>
 using namespace std;
 
@@ -40,9 +37,7 @@ int Fraction::gcd(int n, int m) {
 }
 
 void Fraction::normalize() {
-   // Normalize fraction by
-   // (a) moving sign to numerator
-   // (b) ensuring numerator and denominator have no common divisors
+    
    int sign = 1;
    if (top < 0) {
       sign = -1;
@@ -127,10 +122,9 @@ ostream& operator<<(ostream& out, const Fraction& value) {
 
 istream& operator>>(istream& in, Fraction& retFrac) {
    int top, bottom;
-   // Read the top
+    
    in >> top;
-   // If there is more than just an enter key, read the next number
-   // after skipping the / sign.
+    
    if (in.peek() != 10) {
        char nextChar;
        in >> nextChar;
