@@ -1,8 +1,6 @@
 /*
  * TestInsultGenerator.cpp
  *
- *      Author: Alan McLeod
- *      A testing program for CISC320 assignment 1.
  */
 
 #include <iostream>
